@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Use Gemini API for Free in Python | CoreComputer</title>
+    <style>
+        body {
+            background-color: #0f172a; 
+            color: #f8fafc;            
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .navbar {
+            background-color: #1e293b;
+            border-bottom: 1px solid #334155;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #38bdf8; 
+            text-decoration: none;
+        }
+
+        .nav-links a {
+            color: #94a3b8;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+
+        .nav-links a:hover {
+            color: #38bdf8; 
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+            line-height: 1.8;
+        }
+
+        h1 {
+            color: #38bdf8;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #38bdf8;
+            font-size: 1.5rem;
+            margin-top: 30px;
+            border-bottom: 1px solid #334155;
+            padding-bottom: 10px;
+        }
+
+        .meta-info {
+            color: #64748b;
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
+
+        pre {
+            background-color: #1e293b;
+            border: 1px solid #334155;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            color: #38bdf8;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 14px;
+        }
+
+        code {
+            background-color: #1e293b;
+            padding: 2px 6px;
+            border-radius: 4px;
+            color: #e2e8f0;
+            font-family: monospace;
+        }
+
+        .ad-box {
+            background-color: #0b0f19;
+            border: 1px dashed #475569;
+            color: #94a3b8;
+            text-align: center;
+            padding: 15px;
+            margin: 30px 0;
+            font-size: 13px;
+        }
+
+        footer {
+            background-color: #0f172a;
+            border-top: 1px solid #334155;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 100px;
+            color: #64748b;
+            font-size: 14px;
+        }
+
+        footer a {
+            color: #94a3b8;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            color: #38bdf8;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="index.html" class="logo">CoreComputer</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="tutorials.html">AI Tutorials</a>
+            <a href="about.html">About</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>How to Use Gemini API for Free in Python</h1>
+        <div class="meta-info">Published in 2026 • By CoreComputer Editorial Team</div>
+
+        <p>Google offers an incredible free tier for developers via Google AI Studio. This allows you to tap into the powerful <code>gemini-2.5-flash</code> model without incurring hosting costs. In this guide, we will connect to the API and run our first query script using Python.</p>
+
+        <div class="ad-box">[ AdSense In-Article Responsive Banner ]</div>
+
+        <h2>Step 1: Get the Next-Gen Library</h2>
+        <p>Ensure you are utilizing the official, modern Google GenAI library by running this command in your computer shell environment:</p>
+        <pre>pip install google-genai</pre>
+
+        <h2>Step 2: Obtain Your AI Studio Key</h2>
+        <p>Head to Google AI Studio, click "Create API Key", and secure your unique access string. Do not share this key with anyone!</p>
+
+        <div class="ad-box">[ AdSense Mid-Article Banner ]</div>
+
+        <h2>Step 3: Write Your Request Script</h2>
+        <p>Create a file named <code>test_ai.py</code> and save this minimal functional code snippet to execute a text completion request:</p>
+        
+        <pre>from google import genai
+
+client = genai.Client(api_key="YOUR_API_KEY_HERE")
+
+response = client.models.generate_content(
+    model='gemini-2.5-flash',
+    contents='Give me a one-sentence motivation quote.',
+)
+
+print(response.text)</pre>
+
+        <p>Replace <code>YOUR_API_KEY_HERE</code> with your string token, run the file, and watch the generative response output natively right inside your workspace shell panel!</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 CoreComputer. All rights reserved.</p>
+        <p>
+            <a href="privacy.html">Privacy Policy</a> | 
+            <a href="terms.html">Terms of Service</a> | 
+            <a href="contact.html">Contact Us</a>
+        </p>
+    </footer>
+
+</body>
+</html>

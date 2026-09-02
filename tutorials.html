@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Tutorials Catalog | CoreComputer</title>
+    <style>
+        body {
+            background-color: #0f172a; 
+            color: #f8fafc;            
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .navbar {
+            background-color: #1e293b;
+            border-bottom: 1px solid #334155;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #38bdf8; 
+            text-decoration: none;
+        }
+
+        .nav-links a {
+            color: #94a3b8;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+
+        .nav-links a:hover {
+            color: #38bdf8; 
+        }
+
+        .container {
+            max-width: 820px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        h1 {
+            color: #38bdf8;
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #94a3b8;
+            font-size: 1.1rem;
+            margin-bottom: 40px;
+        }
+
+        .tutorial-matrix {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        .lesson-card {
+            background-color: #1e293b; 
+            padding: 30px;
+            border-radius: 16px;
+            border: 1px solid #334155;
+            position: relative;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+
+        .lesson-card:hover {
+            transform: translateY(-2px);
+            border-color: #38bdf8;
+        }
+
+        .card-header-flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+
+        .lesson-badge {
+            background-color: #0f172a;
+            color: #38bdf8;
+            padding: 6px 12px;
+            border-radius: 8px;
+            font-size: 12px;
+            font-weight: 800;
+            letter-spacing: 0.05em;
+            border: 1px solid #334155;
+        }
+
+        .difficulty {
+            font-size: 12px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .diff-easy { color: #4ade80; }
+        .diff-medium { color: #facc15; }
+
+        .lesson-card h2 {
+            color: #f8fafc;
+            margin: 0 0 10px 0;
+            font-size: 1.4rem;
+        }
+
+        .lesson-card p {
+            color: #94a3b8;
+            font-size: 15px;
+            line-height: 1.6;
+            margin-bottom: 24px;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .start-btn {
+            display: inline-block;
+            background-color: #38bdf8;
+            color: #0f172a;
+            padding: 10px 18px;
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 13px;
+            text-decoration: none;
+            transition: background-color 0.2s;
+            text-align: center;
+        }
+
+        .start-btn:hover {
+            background-color: #0ea5e9;
+        }
+
+        .ad-box {
+            background-color: #0b0f19;
+            border: 1px dashed #475569;
+            color: #94a3b8;
+            text-align: center;
+            padding: 15px;
+            margin: 15px 0;
+            font-size: 13px;
+            border-radius: 12px;
+        }
+
+        footer {
+            background-color: #0f172a;
+            border-top: 1px solid #334155;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 80px;
+            color: #64748b;
+            font-size: 14px;
+        }
+
+        footer a {
+            color: #94a3b8;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            color: #38bdf8;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="index.html" class="logo">CoreComputer</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="tutorials.html">AI Tutorials</a>
+            <a href="about.html">About</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Artificial Intelligence Syllabus</h1>
+        <p class="subtitle">Master full-stack AI development, cloud deployment engineering, and automated workspace macros step-by-step.</p>
+        
+        <div class="tutorial-matrix">
+            
+            <!-- Lesson 1 -->
+            <div class="lesson-card">
+                <div class="card-header-flex">
+                    <span class="lesson-badge">LESSON 01</span>
+                    <span class="difficulty diff-easy">Beginner</span>
+                </div>
+                <h2>Building a Python AI Assistant for PC</h2>
+                <p>Learn how to connect Google's Gemini API with speech engines to build a blazing-fast voice assistant that executes system commands natively on your computer.</p>
+                <div class="button-group">
+                    <a href="https://w3schools.com" target="_blank" class="start-btn">Start Lesson →</a>
+                </div>
+            </div>
+
+            <!-- Lesson 2 -->
+            <div class="lesson-card">
+                <div class="card-header-flex">
+                    <span class="lesson-badge">LESSON 02</span>
+                    <span class="difficulty diff-easy">Beginner</span>
+                </div>
+                <h2>GitHub 101: How to Host and Share Your Code</h2>
+                <p>New to open-source development? Discover how to create your first repository, commit changes, and backup your Python projects securely in the cloud.</p>
+                <div class="button-group">
+                    <a href="https://github.com" target="_blank" class="start-btn">Start Lesson →</a>
+                </div>
+            </div>
+
+            <!-- AdSense Row Break -->
+            <div class="ad-box">[ Google AdSense Inline Syllabus Ad Placement ]</div>
+
+            <!-- Lesson 3 -->
+            <div class="lesson-card">
+                <div class="card-header-flex">
+                    <span class="lesson-badge">LESSON 03</span>
+                    <span class="difficulty diff-medium">Intermediate</span>
+                </div>
+                <h2>How to Fix PyAudio Installation Errors on Windows</h2>
+                <p>Stuck on 'Failed to build wheel for pyaudio' during your assistant setup? Follow this simple walkthrough to install the correct pre-compiled binary packages instantly.</p>
+                <div class="button-group">
+                    <a href="https://pypi.org" target="_blank" class="start-btn">Start Lesson →</a>
+                </div>
+            </div>
+
+            <!-- Lesson 4 -->
+            <div class="lesson-card">
+                <div class="card-header-flex">
+                    <span class="lesson-badge">LESSON 04</span>
+                    <span class="difficulty diff-medium">Intermediate</span>
+                </div>
+                <h2>How to Use Gemini API for Free in Python</h2>
+                <p>Get your free Google AI Studio API key and write your first script to chat with the gemini-2.5-flash model. Perfect for lightweight, budget-friendly AI apps.</p>
+                <div class="button-group">
+                    <a href="https://google.dev" target="_blank" class="start-btn">Start Lesson →</a>
+                </div>
+            </div>
+
+            <!-- Lesson 5 -->
+            <div class="lesson-card">
+                <div class="card-header-flex">
+                    <span class="lesson-badge">LESSON 05</span>
+                    <span class="difficulty diff-easy">Beginner</span>
+                </div>
+                <h2>Top 5 Python Automation Scripts for Beginners</h2>
+                <p>Stop repeating tedious desktop tasks manually. Learn how to script quick automation solutions that clean your downloads folder and rename files instantly.</p>
+                <div class="button-group">
+                    <a href="https://realpython.com" target="_blank" class="start-btn">Start Lesson →</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 CoreComputer. All rights reserved.</p>
+        <p>
+            <a href="privacy.html">Privacy Policy</a> | 
+            <a href="terms.html">Terms of Service</a> | 
+            <a href="contact.html">Contact Us</a>
+        </p>
+    </footer>
+
+</body>
+</html>

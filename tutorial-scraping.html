@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Scraping 101 with Python | CoreComputer</title>
+    <style>
+        body {
+            background-color: #0f172a; 
+            color: #f8fafc;            
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .navbar {
+            background-color: #1e293b;
+            border-bottom: 1px solid #334155;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #38bdf8; 
+            text-decoration: none;
+        }
+
+        .nav-links a {
+            color: #94a3b8;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+
+        .nav-links a:hover {
+            color: #38bdf8; 
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+            line-height: 1.8;
+        }
+
+        h1 {
+            color: #38bdf8;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #38bdf8;
+            font-size: 1.5rem;
+            margin-top: 30px;
+            border-bottom: 1px solid #334155;
+            padding-bottom: 10px;
+        }
+
+        .meta-info {
+            color: #64748b;
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
+
+        pre {
+            background-color: #1e293b;
+            border: 1px solid #334155;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            color: #38bdf8;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 14px;
+        }
+
+        code {
+            background-color: #1e293b;
+            padding: 2px 6px;
+            border-radius: 4px;
+            color: #e2e8f0;
+            font-family: monospace;
+        }
+
+        .ad-box {
+            background-color: #0b0f19;
+            border: 1px dashed #475569;
+            color: #94a3b8;
+            text-align: center;
+            padding: 15px;
+            margin: 30px 0;
+            font-size: 13px;
+        }
+
+        footer {
+            background-color: #0f172a;
+            border-top: 1px solid #334155;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 100px;
+            color: #64748b;
+            font-size: 14px;
+        }
+
+        footer a {
+            color: #94a3b8;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            color: #38bdf8;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="index.html" class="logo">CoreComputer</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="tutorials.html">AI Tutorials</a>
+            <a href="about.html">About</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Web Scraping 101: Extracting Data with Python</h1>
+        <div class="meta-info">Published in 2026 • By CoreComputer Editorial Team</div>
+
+        <p>Need data blocks, text, or prices from a webpage for your own coding projects? Web scraping is the automated process of extracting public data from websites. In this beginner guide, we will use two incredibly popular Python packages to download and parse web documents safely.</p>
+
+        <div class="ad-box">[ AdSense In-Article Responsive Banner ]</div>
+
+        <h2>Step 1: Install Your Scraping Packages</h2>
+        <p>We will use <code>requests</code> to fetch the page content and <code>beautifulsoup4</code> to read through the HTML elements. Install them via your terminal window:</p>
+        <pre>pip install requests beautifulsoup4</pre>
+
+        <h2>Step 2: Read the HTML Code Structure</h2>
+        <p>Before extracting data, your script needs to download the raw webpage data. We do this by sending a standard HTTP request to our target URL link address layout mapping tool.</p>
+
+        <div class="ad-box">[ AdSense Mid-Article Banner ]</div>
+
+        <h2>Step 3: Write Your Data Extraction Script</h2>
+        <p>Create a script named <code>scraper.py</code> and add this core blueprint logic block to target and extract article header titles smoothly:</p>
+
+        <pre>import requests
+from bs4 import BeautifulSoup
+
+url = "https://example.com"
+response = requests.get(url)
+
+# Convert raw page code into a readable object tree structure
+soup = BeautifulSoup(response.text, 'html.parser')
+
+# Find and log all headline layout text containers
+for heading in soup.find_all('h2'):
+    print(heading.text.strip())
+
+print("Target site data elements parsed and logged successfully!")</pre>
+
+        <p>Always review a website's <code>robots.txt</code> parameters before scraping data to ensure your automated queries are respectful and ethically compliant!</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 CoreComputer. All rights reserved.</p>
+        <p>
+            <a href="privacy.html">Privacy Policy</a> | 
+            <a href="terms.html">Terms of Service</a> | 
+            <a href="contact.html">Contact Us</a>
+        </p>
+    </footer>
+
+</body>
+</html>
